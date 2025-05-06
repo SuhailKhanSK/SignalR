@@ -1,0 +1,14 @@
+# Node (Angular)
+angular-signalr-client/node_modules/
+angular-signalr-client/dist/
+
+# .NET
+*/bin/
+*/obj/
+*/.vs/
+
+# OS/IDE-specific
+.vscode/
+*.user
+*.suo
+.DS_Store
