@@ -1,11 +1,13 @@
 # Node (Angular)
 angular-signalr-client/node_modules/
 angular-signalr-client/dist/
+/angular-signalr-client/.angular/cache/19.2.10/angular-signalr-client
+/angular-signalr-client/package-lock.json
 
 # .NET
-*/bin/
-*/obj/
-*/.vs/
+*bin/
+*obj/
+*.vs/
 
 # OS/IDE-specific
 .vscode/

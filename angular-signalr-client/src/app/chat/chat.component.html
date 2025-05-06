@@ -1,0 +1,21 @@
+<div class="chat-container">
+    <div class="chat-header">
+      <input [(ngModel)]="user" placeholder="Your Name" class="input" />
+      <input [(ngModel)]="group" placeholder="Group Name" class="input" />
+      <button (click)="connect()" [disabled]="!user || !group">Join</button>
+      <button (click)="disconnect()">Leave</button>
+    </div>
+  
+    <div class="chat-messages" *ngIf="messages.length > 0">
+      <div class="message" *ngFor="let msg of messages">
+        <span class="user">{{ msg.user }}</span>: 
+        <span class="text">{{ msg.message }}</span>
+      </div>
+    </div>
+  
+    <div class="chat-input" *ngIf="user && group">
+      <input [(ngModel)]="message" (keyup.enter)="send()" placeholder="Type a message..." class="input" />
+      <button (click)="send()" [disabled]="!message">Send</button>
+    </div>
+  </div>
+  
